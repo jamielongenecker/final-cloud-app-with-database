@@ -29,15 +29,15 @@ class LessonAdmin(admin.ModelAdmin):
 
 
 # <HINT> Register Question and Choice models here
-class QuestionAdmin(admin.ModelAdmin):
-    list_display = ['question_text', 'grade']
+# class QuestionAdmin(admin.ModelAdmin):
+#     list_display = ['question_text', 'grade']
 
-class ChoiceAdmin(admin.ModelAdmin):
-    list_display = ['choice_text', 'is_correct']
+# class ChoiceAdmin(admin.ModelAdmin):
+#     list_display = ['choice_text', 'is_correct']
 
 admin.site.register(Course, CourseAdmin)
 admin.site.register(Lesson, LessonAdmin)
 admin.site.register(Instructor)
 admin.site.register(Learner)
-admin.site.register(Question, QuestionAdmin)
-admin.site.register(Choice, ChoiceAdmin)
+admin.site.register(Question)
+admin.site.register(Choice)
